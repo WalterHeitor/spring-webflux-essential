@@ -16,6 +16,6 @@ class AnimeService(val animeRepository: AnimeRepository) {
         return animeRepository.findAll();
     }
     fun findById(id: Int): Mono<Anime> {
-        return animeRepository.findById(id)
+        return animeRepository.findById(id).log()
     }
 }
