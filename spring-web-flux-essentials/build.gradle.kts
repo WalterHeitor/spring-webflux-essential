@@ -34,8 +34,18 @@ dependencies {
 	compileOnly("org.projectlombok:lombok")
 	developmentOnly("org.springframework.boot:spring-boot-devtools")
 	annotationProcessor("org.projectlombok:lombok")
+	// https://mvnrepository.com/artifact/io.projectreactor.tools/blockhound
+	runtimeOnly("io.projectreactor.tools:blockhound:1.0.8.RELEASE")
+	// https://mvnrepository.com/artifact/org.postgresql/r2dbc-postgresql
+	implementation("org.postgresql:r2dbc-postgresql:1.0.0.RELEASE")
+
+
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testImplementation("io.projectreactor:reactor-test")
+
+
+
+
 }
 
 tasks.withType<KotlinCompile> {
