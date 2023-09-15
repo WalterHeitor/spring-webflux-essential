@@ -9,6 +9,6 @@ import reactor.blockhound.BlockHound
 class SpringWebFluxEssentialsApplication
 
 fun main(args: Array<String>) {
-BlockHound.install()
+//BlockHound.install()
 	runApplication<SpringWebFluxEssentialsApplication>(*args)
 }
