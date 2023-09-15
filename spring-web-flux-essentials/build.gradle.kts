@@ -26,10 +26,10 @@ repositories {
 }
 
 dependencies {
-	// https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-validation
 	implementation("org.springframework.boot:spring-boot-starter-validation:3.1.2")
 	implementation("org.springframework.boot:spring-boot-starter-data-r2dbc")
 	implementation("org.springframework.boot:spring-boot-starter-webflux")
+
 	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
 	implementation("io.projectreactor.kotlin:reactor-kotlin-extensions")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
@@ -37,12 +37,10 @@ dependencies {
 	compileOnly("org.projectlombok:lombok")
 	developmentOnly("org.springframework.boot:spring-boot-devtools")
 	annotationProcessor("org.projectlombok:lombok")
-	// https://mvnrepository.com/artifact/io.projectreactor.tools/blockhound
-	runtimeOnly("io.projectreactor.tools:blockhound:1.0.8.RELEASE")
-	// https://mvnrepository.com/artifact/org.postgresql/r2dbc-postgresql
+
+	implementation("io.projectreactor.tools:blockhound:1.0.8.RELEASE")
 	implementation("org.postgresql:r2dbc-postgresql:1.0.0.RELEASE")
-//	// https://mvnrepository.com/artifact/io.projectreactor/reactor-tools
-//	implementation("io.projectreactor:reactor-tools:3.3.0.M2")
+	implementation("io.projectreactor:reactor-tools")
 
 
 
