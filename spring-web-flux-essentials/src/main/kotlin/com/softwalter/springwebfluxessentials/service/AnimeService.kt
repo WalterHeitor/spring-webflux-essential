@@ -15,7 +15,7 @@ import reactor.core.publisher.Mono
 @RequiredArgsConstructor
 class AnimeService(val animeRepository: AnimeRepository) {
     fun findAll(): Flux<Anime> {
-        return animeRepository.findAll();
+        return animeRepository.findAll().log()
     }
     fun findById(id: Int): Mono<Anime> {
         return animeRepository.findById(id)

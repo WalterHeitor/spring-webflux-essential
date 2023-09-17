@@ -1,10 +1,11 @@
 package com.softwalter.springwebfluxessentials.domain
 
-import jakarta.validation.constraints.NotEmpty
-import jakarta.validation.constraints.NotNull
+
 import lombok.*
 import org.springframework.data.annotation.Id
 import org.springframework.data.relational.core.mapping.Table
+import javax.validation.constraints.NotEmpty
+import javax.validation.constraints.NotNull
 
 @Data
 @AllArgsConstructor
