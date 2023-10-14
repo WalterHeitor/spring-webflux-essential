@@ -12,6 +12,7 @@ import javax.validation.constraints.NotNull
 @NoArgsConstructor
 @Builder
 @With
+@Value
 @Table("anime")
 data class Anime (
         @Id
@@ -19,5 +20,5 @@ data class Anime (
 
         @NotNull
         @NotEmpty(message = "The name of this anime cannot be empty")
-        val name: String? = null
+        var name: String? = null
 )
