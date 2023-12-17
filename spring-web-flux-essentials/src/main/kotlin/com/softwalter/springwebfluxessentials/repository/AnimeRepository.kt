@@ -1,6 +1,6 @@
 package com.softwalter.springwebfluxessentials.repository
 
-import com.softwalter.springwebfluxessentials.domain.Anime
+import com.softwalter.springwebfluxessentials.application.domain.Anime
 import org.springframework.data.repository.reactive.ReactiveCrudRepository
 import reactor.core.publisher.Mono
 

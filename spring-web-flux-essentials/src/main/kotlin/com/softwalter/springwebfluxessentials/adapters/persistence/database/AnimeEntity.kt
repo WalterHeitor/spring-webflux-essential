@@ -1,5 +1,4 @@
-package com.softwalter.springwebfluxessentials.domain
-
+package com.softwalter.springwebfluxessentials.adapters.persistence.database
 
 import lombok.*
 import org.springframework.data.annotation.Id
@@ -14,7 +13,7 @@ import javax.validation.constraints.NotNull
 @With
 @Value
 @Table("anime")
-data class Anime (
+data class AnimeEntity(
         @Id
         val id: Int? = null,
 

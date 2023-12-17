@@ -1,7 +1,7 @@
-package com.softwalter.springwebfluxessentials.controller
+package com.softwalter.springwebfluxessentials.adapters.web
 
-import com.softwalter.springwebfluxessentials.domain.Anime
-import com.softwalter.springwebfluxessentials.service.AnimeService
+import com.softwalter.springwebfluxessentials.application.domain.Anime
+import com.softwalter.springwebfluxessentials.application.usecases.AnimeService
 import lombok.RequiredArgsConstructor
 import lombok.extern.slf4j.Slf4j
 import org.springframework.http.HttpStatus
